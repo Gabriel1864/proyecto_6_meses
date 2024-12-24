@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 6 Meses</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.5rem;
+            color: #fff;
+            margin: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        .photos {
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .photos img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: auto;
+            transform: rotate(calc(var(--rotation, 0) * 1deg));
+        }
+        .photos img:nth-child(odd) {
+            --rotation: -10;
+        }
+        .photos img:nth-child(even) {
+            --rotation: 10;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background-color: #ff5252;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('hiddenMessage').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Feliz 6 Meses Juntos, Mi Amor ❤️</h1>
+    <p>Estos 6 meses contigo han sido los más felices de mi vida. Gracias por todo tu amor y por ser la persona increíble que eres.</p>
+    <div class="photos">
+        <img src="foto1.jpg" alt="Foto juntos">
+        <img src="foto2.jpg" alt="Otra foto juntos">
+        <img src="foto3.jpg" alt="Tercera foto juntos">
+        <img src="foto4.jpg" alt="Cuarta foto juntos">
+        <img src="foto5.jpg" alt="Quinta foto juntos">
+    </div>
+    <button onclick="showMessage()">Haz clic aquí mi amor</button>
+    <div id="hiddenMessage" class="hidden-message">
+        Mi amor, hoy es un 23 muy especial para nosotros ya que cumplimos 6 meses de estar juntos a pesar de la distancia, de verdad pasa tan rapido el tiempo que no me doy cuenta, pero todo el tiempo que hemos estado juntos no lo cambiaría por nada, eres lo más bonito que me ha pasado este año y quiero que siga siendo así para toda la vida, me haces muy feliz y quiero hacerlo yo también siempre. Te amo con todo mi corazón, tal vez las palabras a veces no sean suficiente pero creéme que cuando te digo que te quiero o que te amo, va desde muy dentro de mi corazón.
+        Hemos tenido uno que otro momento en el que no hayamos estado del todo bien pero eso no hace que yo te deje de querer o amar, siempre lo estoy haciendo aunque no te lo diga. Me gustas mucho por como eres, tu personalidad, tu manera de expresarte, por como te pones nerviosa por cosas que digo, todo hace que te ame más y quiera estar más tiempo contigo, simplemente me haces el chico más feliz del mundo.
+        Haces que te extrañe mucho por la distancia que hay entre nosotros pero sé que algún día podremos pasar juntos un día tan especial como este y poder hacer algo juntos como cualquier otra pareja, estoy esperando muy ansioso a que ese día llegue al fin.
+        No quiero que pienses que me vas a dejar de gustar porque eso es lo último que pasa por mi mente, yo solo quiero estar a tu lado y espero que tú también lo quieras. Me quedo corto con todo lo que te quiero expresar, creo que sería más fácil estar contigo y demostrartelo con mucho afecto, eso es lo que mejor sé hacer jsjsjs.
+        Bueno mi amor espero que este detalle te guste mucho, tuve un poco de ayuda pero todos los detalles son de mi parte. Feliz 6 meses juntos mi amor ❤️.
+    </div>
+    <footer>
+        Con todo mi amor, tu terroncito ❤️
+    </footer>
+</body>
+</html>
